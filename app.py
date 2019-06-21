@@ -23,11 +23,11 @@ def about():
 def index():
     return render_template('index.html')
 
-@app.route('/print', methods=['GET','POST'])
+@app.route('/print', methods=['POST'])
 def print_input():
     return render_template('print.html',stock=request.form['ticker2'] )
     
-@app.route('/plot', methods=['GET','POST'])
+@app.route('/plot', methods=['POST'])
 def graph():
 
         app.vars['ticker'] = request.form['ticker']
