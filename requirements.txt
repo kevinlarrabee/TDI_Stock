@@ -1,6 +1,6 @@
-bokeh
-Flask
 pandas
 gunicorn
 requests
+bokeh==1.1.0
+Flask==1.0.2
 
