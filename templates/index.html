@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+    		<title>Stock Performance Application</title>
+    			<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='main.css') }}">
+  	</head>
+	
+	<body>
+		<div class=page>
+  			<h2>Stock Performance Research</h2>
+			<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='main.css') }}">
+  			
+    			<h4>Enter a Ticker Symbol: (FB,GE,MMM) </h4>
+			
+
+    			<form id='input' method='post' action='plot'>	
+	  			<p>
+					Ticker symbol: <input type='text' name='ticker' />
+					<br>
+					<h5>Enter only only symbol:</h5>
+	  			</p>
+				
+				<p>
+					<input type="checkbox" name='Close'>Closing price<br>
+					
+	    			<input type="submit" value="Submit">
+	  			</p>
+			</form>
+
+			<h4>Please enter a stock ticker , It will print to page print.</h4>
+
+    			<form id='input2' method='post' action='print'>	
+	  			<p>
+					Ticker symbol: <input type='text' name='ticker2' />				
+	  			</p>
+	  			
+				<p>
+					<input type="submit" value="Submit">
+	  			</p>
+				
+			</form>
+  			</div>
+		</div>
+	</body>
+</html>
